@@ -6,7 +6,6 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 
 configurations {
@@ -47,4 +46,12 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+}
+
+bootJar {
+	mainClassName = 'com.example.springbootstarter.SpringBootStarterApplication'
+	manifest {
+		attributes('Implementation-Title': 'springboot-starter-app',
+				   'Implementation-Version': version)
+	}
 }

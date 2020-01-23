@@ -1,11 +1,6 @@
 application:
   name: springboot-starter-app
 
-info:
-  app:
-    name: springboot-starter-app
-    version: 0.1
-
 management:
   info:
     git:
@@ -13,7 +8,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: info, health, metrics, env
+        include: info, health, metrics
   endpoint:
     health:
       show-details: always

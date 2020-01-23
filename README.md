@@ -14,3 +14,13 @@ This application contains the following:
 1. Clone this repo from the Github repo
 2. Open a command window in the project directory and execute `./gradlew build bootRun`
 3. Verify the application is up and running `http://localhost:8080/actuator/health`
+
+# NOTES
+1. The _application version_ is set _before_ a release by updating the `version` in `gradle.properties`
+   this should be done automatically by CI/CD and **not** by developers.
+2. Build instructions:
+   ```
+   ./gradlew clean bootJar
+   java -jar ./build/libs/springboot-starter-0.0.1-SNAPSHOT.jar
+   
+   ```

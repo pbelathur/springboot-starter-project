@@ -10,4 +10,4 @@
 \__ \ || (_| | |  | ||  __/ |
 |___/\__\__,_|_|   \__\___|_|
 
-${Ansi.RED}:::: [${application.name} ${application.version}] built using Spring Boot ${spring-boot.version} :::: ${Ansi.DEFAULT}
+${Ansi.RED}:::: [${application.name} ${application.version}] built using springboot-${spring-boot.version} :::: ${Ansi.DEFAULT}
